@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Abril+Fatface?classification=Display">
+        <style>
+            .logo{top:0;left:0;}
+            .logo{
+                float:left;
+                width:10%;
+            }
+
+            .logo{
+                opacity:1;
+            }
+
+            .logo:hover{
+                opacity:0.5;
+                transform: rotate(360deg);
+                transition: all 2s ease-in-out;
+            }
+
+            body {
+                font-family: 'Lato', sans-serif;
+                background: white;
+            }
+            .navbar {
+                background-color: white;
+                color: black;
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .logo {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+            .menu {
+                list-style: none;
+                display: flex;
+            }
+
+            .menu li {
+                margin: 0 15px;
+            }
+
+            .menu a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: white;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                display: block;
+                text-decoration: none;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            @media only screen and (max-width: 1498px) {
+                .menu {
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 40px;
+                    left: 0;
+                    right: 0;
+                    background-color: white;
+                    z-index: 1;
+                }
+
+                .menu li {
+                    margin: 0;
+                    text-align: center;
+                    border-bottom: 1px solid #555;
+                }
+
+                .menu a {
+                    padding: 15px;
+                    display: block;
+                }
+
+                .dropdown:hover .dropdown-content {
+                    display: flex;
+                }
+
+                #toggle:checked + .menu {
+                    display: flex;
+                }
+                .Footer {
+                    font-size: 18px; 
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo"><img src="Images/logoimage..svg"></div>
+            <input type="checkbox" id="toggle">
+
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Package Tours</a>
+                    <div class="dropdown-content">
+                        <a href="#">European Tour</a>
+                        <a href="#">Asian Tour</a>
+                        <a href="#">American Tour</a>
+                    </div>
+                </li>
+                <li><a href="#">Rediscover Singapore</a></li>
+                <li><a href="Cruises.html">Cruises</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="Low-fi.html">Low-fi</a></li>
+            </ul>
+        </nav>
+        <div class="columns">
+            <div>
+                <br>
+                <h2>Norwegian Cruise Services</h2>
+                <p>As a top international cruise line, we want to be the go-to destination for vacationers everywhere, with a portfolio of three award-winning brands.</p>
+                <p>We distinguish ourselves with our new, cutting-edge product offers, strong growth profile, and youthful, contemporary fleet.</p>
+                <p> Current Ships available</p>
+            </div>
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col-3">
+                        <hr>
+                        <b>Norwegian Sun<br/></b>
+                        <a href="Images/NorwegianSun.png" target="_blank">
+                            <img src="Images/NorwegianSun.png" alt="Ship1" title="Ship1" height="675" width="1200" /></a></br>
+                        Port of Call:Maryland, Baltimore, USA
+                        <br>
+                        <a href="https://www.cruisecritic.com/cruise/norwegian-ncl/norwegian-sun" class="btn btn-secondary text-white">Learn More about the Ship</a>
+                        <hr>
+                    </div>
+                    <div class="col-3">
+                        <b>Norwegian Bliss<br/></b>
+                        <a href="Images/NorwegianBliss.png" target="_blank">
+                            <img src="Images/NorwegianBliss.png" alt="Ship2" title="Ship1" height="675" width="1200" /></a></br>
+                        Port of Call:Seattle, Washington, USA
+                        <br>
+                        <a href="https://www.cruisecritic.com/cruise/norwegian-ncl/norwegian-bliss" class="btn btn-secondary text-white">Learn More about the Ship</a>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="Footer">
+                        Copyright@CruiseCritic
+                    </div>
+                    </br>
+                    </body>
+                    </html>

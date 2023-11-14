@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Abril+Fatface?classification=Display">
+        <link rel="stylesheet" type="text/css" href="stylesheets/index.css"/>
+        <style>
+            .logo{top:0;left:0;}
+            .logo{
+                float:left;
+                width:10%;
+            }
+
+            .logo{
+                opacity:1;
+            }
+
+            .logo:hover{
+                opacity:0.5;
+                transform: rotate(360deg);
+                transition: all 2s ease-in-out;
+            }
+
+            body {
+                font-family: 'Lato', sans-serif;
+                background: white;
+            }
+
+            .navbar {
+                background-color: white;
+                color: black;
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .menu {
+                list-style: none;
+                display: flex;
+            }
+
+            .menu li {
+                margin: 0 15px;
+            }
+
+            .menu a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: white;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                display: block;
+                text-decoration: none;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            h2{
+                text-align:center;
+            }
+
+            h3{
+                text-align:center;
+            }
+
+            @media only screen and (max-width: 1498px) {
+                .menu {
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 40px;
+                    left: 0;
+                    right: 0;
+                    background-color: white;
+                    z-index: 1;
+                }
+
+                .menu li {
+                    margin: 0;
+                    text-align: center;
+                    border-bottom: 1px solid #555;
+                }
+
+                .menu a {
+                    padding: 15px;
+                    display: block;
+                }
+
+                .dropdown:hover .dropdown-content {
+                    display: flex;
+                }
+
+                #toggle:checked + .menu {
+                    display: flex;
+                }
+                .Footer {
+                    font-size: 18px; 
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo"><img src="Images/logoimage..svg"></div>
+            <input type="checkbox" id="toggle">
+
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Package Tours</a>
+                    <div class="dropdown-content">
+                        <a href="#">European Tour</a>
+                        <a href="#">Asian Tour</a>
+                        <a href="#">American Tour</a>
+                    </div>
+                </li>
+                <li><a href="#">Rediscover Singapore</a></li>
+                <li><a href="Cruises.html">Cruises</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="Low-fi.html">Low-fi</a></li>
+            </ul>
+        </nav>
+        <H2>Please feel free to contact us at the following:</H2>
+        <H3><b>World Xplorer LLC</b><br/>
+            1 Park Rd #05-01 People's Pk Complex, Singapore<br/>
+            Postal Code 059108<br/>
+            Email: <A href="mailto:WorldXplorer@email.com">worldXplorer@email.com</a><br/>
+            Tel: 5522 9999 (ext 800)<br/>
+        </H3>
+        </br>
+        <hr>
+        <div class="Footer">
+            Copyright@WorldXplorer
+        </div>
+    </body>
+</html>
